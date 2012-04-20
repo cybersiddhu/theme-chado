@@ -1,8 +1,7 @@
 ---
-name : twitter
-website : http://twitter.github.com/bootstrap
-git_url : git://github.com/jekyllbootstrap/theme-twitter.git
-source_url : https://github.com/jekyllbootstrap/theme-twitter
+name : chado
+website : http://github.com/cybersiddhu/jb-theme-chado
+git_url : git://github.com/cybersiddhu/jb-theme-chado.git
+source_url : https://github.com/cybersiddhu/jb-theme-chado
 author:
-  name : "Jacob Thornton and Mark Otto"
-  website : http://twitter.github.com/bootstrap
+  name : "Siddhartha Basu"
