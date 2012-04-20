@@ -1,4 +1,4 @@
-This is a super minimal,  ultra simple blogging theme compatible with Jekyll-Bootstrap
+This is a super minimal,  ultra simple blogging theme for Jekyll-Bootstrap
 
 ## What is chado ?
 Chado - the way of tea. For more go [here](http://gmod.org/wiki/Introduction_to_Chado)
