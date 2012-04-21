@@ -42,7 +42,7 @@
     	    $(document).ready(function (){
     	       $('#tweets').jTweetsAnywhere({ 
     	          username: "{{ site.JB.twitter.user }}", 
-    	          count: 5, 
+    	          count: {{ site.JB.twitter.count }}, 
     	          showFollowButton: true
     	       });
     	    }); 
