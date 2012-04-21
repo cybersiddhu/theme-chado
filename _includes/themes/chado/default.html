@@ -50,6 +50,29 @@
 
     {% endif %}
 
+    {% if site.JB.github.show %}
+				<script
+				  type="text/javascript"
+				  src="{{ ASSET_PATH }}/js/github.js">
+			  </script>
+			  <script type="text/javascript">
+    	    $(document).ready(function (){
+    	       gh.user("{{ site.JB.github.user }}").repos(function(data) {
+    	          for (repo in data.repositories) {
+    	            var label = $('<h4>').append(
+    	                          $('<a>',{ 
+    	                            text: repo.description, 
+    	                            href: repo.url
+    	                          }));
+    	          	$('#github').append(label);
+    	          }
+    	       });
+    	    }); 
+			  </script>
+    {% endif %}
+
+
+
   </head>
 
   <body>
@@ -82,6 +105,8 @@
     			<h3><a href="{{ BASE_PATH }}/about.html">About</a></h3>
     			<h3>Latest tweets</h3>
     			<div id="tweets"></div>
+    			<h3>Github Repos </h3>
+    			<div id="github"></div>
     		</div>
     	</div>
 
