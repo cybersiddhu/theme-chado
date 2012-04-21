@@ -61,10 +61,10 @@
     	          for (repo in data.repositories) {
     	            var label = $('<h4>').append(
     	                          $('<a>',{ 
-    	                            text: repo.description, 
+    	                            text: repo.name, 
     	                            href: repo.url
     	                          }));
-    	          	$('#github').append(label);
+    	          	$('#github').append(label).append($('<p>', {text: repo.description}));
     	          }
     	       });
     	    }); 
