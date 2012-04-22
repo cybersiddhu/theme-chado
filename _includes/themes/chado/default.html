@@ -55,14 +55,14 @@
     	    $(document).ready(function (){
     	    	 var url = 'https://api.github.com/users/' + "{{ site.JB.github.user }}" + '/repos';
     	       $.getJSON(url, function(data) {
-    	          for (repo in data.repositories) {
+    	          $.each(data, function(index, repo) {
     	            var label = $('<h4>').append(
     	                          $('<a>',{ 
     	                            text: repo.name, 
     	                            href: repo.url
     	                          }));
     	          	$('#github').append(label).append($('<p>', {text: repo.description}));
-    	          }
+    	          });
     	       });
     	    }); 
 			  </script>
