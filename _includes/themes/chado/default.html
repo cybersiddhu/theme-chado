@@ -71,11 +71,7 @@
     	    }); 
 			  </script>
     {% endif %}
-
-
-
   </head>
-
   <body>
 
 	 <!-- navigation bar on top -->
@@ -103,8 +99,11 @@
     <div class="container">
     <!-- page content -->
     	<div class="row">
+    	  <div class="span8">
         	{{ content }}
-    		<div class="span2">
+        </div>
+        <div class="span2"></div>
+    		<div class="span2 offset2">
     			<h3><a href="{{ BASE_PATH }}/about.html">About</a></h3>
     			<h3>Latest tweets</h3>
     			<div id="tweets"></div>
